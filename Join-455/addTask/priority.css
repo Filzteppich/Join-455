@@ -1,0 +1,60 @@
+.priority_btn_group {
+    justify-content: space-between;
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.priority_btn_group input[type='radio'] {
+    display: none;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effecte für mobile deaktivieren  */
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#prio_urgent:checked + label.btn--red {
+    background-color: var(--urgent-priority-btn-color-active);
+    border-color: var(--urgent-priority-btn-color-active);
+    color: #fff;
+}
+
+#prio_medium:checked + label.btn--orange {
+    background-color: var(--medium-priority-btn-color-active);
+    border-color: var(--medium-priority-btn-color-active);
+    color: #fff;
+}
+
+#prio_low:checked + label.btn--green {
+    background-color: var(--low-priority-btn-color-active);
+    border-color: var(--low-priority-btn-color-active);
+    color: #fff;
+}
+
+.priority_icon {
+    width: 20px;
+    height: 15px;
+}
+

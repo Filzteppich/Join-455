@@ -1,0 +1,120 @@
+.category_group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+.category_dropdown {
+    position: relative;
+    width: 100%;
+    font-family: sans-serif;
+    margin-top: 8px;
+}
+
+.category_dropdown_input_wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.category_dropdown_toggle {
+    width: 100%;
+    box-sizing: border-box;
+    height: 48px;
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+    text-align: left;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.category_dropdown_toggle:focus {
+    outline: none;
+    border-color: #2684ff;
+}
+
+.category_arrow_bg_hover_color {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid black;
+    transition: transform 0.3s ease;
+}
+
+.category_dropdown_menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    max-height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -1px;
+    list-style: none;
+    padding: 0;
+    overflow-y: auto;
+    padding-bottom: 8px;
+}
+
+.category_dropdown_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.category_dropdown_item:hover {
+    background-color: var(--category-dropdown-background-color);
+    border-radius: 10px;
+}
+
+.category_dropdown.open .category_dropdown_menu {
+    display: block;
+}
+
+.category_dropdown.open .arrow {
+    transform: rotate(180deg);
+}
+
+.category_dropdown_input_wrapper:hover .category_arrow_bg_hover_color {
+    background-color: lightgray;
+}
+
+.category_dropdown.open .category_arrow_bg_hover_color {
+    background-color: skyblue;
+}
+
+.category_dropdown_toggle::placeholder {
+    color: black;
+}
+

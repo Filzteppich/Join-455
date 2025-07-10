@@ -1,0 +1,127 @@
+@media screen and (max-width: 1050px) {
+    /* header resp*/
+    header {
+        height: 80px;
+        width: 100%;
+        left: 0;
+    }
+
+    .help_mobile {
+        display: flex !important;
+    }
+
+    .help_def {
+        display: none;
+    }
+
+    .join_logo_mobile {
+        display: block;
+        padding-left: 16px;
+    }
+
+    header span {
+        display: none;
+    }
+
+    .sidebar_join_logo {
+        display: block !important;
+    }
+
+    /* sidebar resp */
+
+    .sidebar_join_logo {
+        display: none;
+    }
+
+    .sidebar_img_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sidebar_container {
+        font-size: 85%;
+        display: flex;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        height: 80px;
+        padding: 0;
+        flex-direction: row;
+        left: 0;
+    }
+
+    .sidebar_nav a {
+        text-decoration: none;
+        color: var(--text-color-sidebar);
+        display: flex;
+        height: 80px;
+        width: 76px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+        border-radius: 1rem;
+    }
+
+    .nav_item span {
+        font-size: 14px;
+    }
+
+    .nav_item img {
+        width: 24px;
+        height: 24px;
+    }
+
+    #navbar_container {
+        width: 100%;
+    }
+
+    .sidebar_nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    .sidebar_footer {
+        display: none;
+    }
+
+    /* contact save message */
+
+    .contact_save_message {
+        width: 21.13rem;
+        position: fixed;
+        left: 50%;
+        bottom: 14%;
+        transform: translate(-50%, -50%);
+        transition: all 225ms ease-in-out;
+        pointer-events: none;
+        font-size: 19px;
+    }
+    .legal_container,
+    .help_container,
+    .policy_container,
+    .summary_container,
+    .board_container {
+        top: 80px !important;
+        left: 0 !important;
+        width: calc(100% - 32px) !important;
+        height: calc(100% - 180px) !important;
+        padding-bottom: 20px !important;
+        padding: 0 16px 20px 16px !important;
+    }
+    
+    .container_padding{
+        padding: 30px 16px 20px 16px;
+    }
+
+    .default_container{
+        padding: 0 50px;
+        width: unset;
+    }
+}

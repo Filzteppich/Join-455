@@ -1,0 +1,76 @@
+main {
+    height: 100vh;
+    display: flex;
+}
+
+li::marker {
+    font-size: 27px;
+}
+
+.navbar_mobile_container_style {
+    display: contents;
+}
+
+.help_title {
+    font-size: 73px;
+}
+
+.section_title {
+    font-size: 27px;
+}
+
+.instruction_title {
+    font-size: 20px;
+}
+
+.section_title_end {
+    padding-bottom: 20px;
+    font-size: 27px;
+    padding-left: 8px;
+}
+
+.help_container {
+    display: flex;
+    position: relative;
+    top: 100px;
+    height: calc(100% - 100px);
+    width: calc(100% - 424px);
+    padding: 0 48px;
+    overflow-y: auto;
+    flex: 1;
+    max-width: 1440px;
+}
+
+.arrow_button_container {
+    display: flex;
+    width: 56px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 32px;
+    z-index: 10;
+}
+
+.arrow_button_position {
+    position: absolute;
+    top: 32px;
+    right: 0px;
+}
+
+.arrow_button_position:hover {
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.arrow_style {
+    cursor: pointer;
+}
+
+.arrow_style:hover {
+    scale: 1.1;
+}
+
+.p_tag_style {
+    padding-bottom: 20px;
+}
+

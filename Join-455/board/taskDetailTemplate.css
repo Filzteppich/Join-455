@@ -1,0 +1,244 @@
+:root {
+    --checkbox-hover-bg: #A8A8A8;
+    --checkbox-checked-hover-bg: #D1D1D1;
+}
+
+.overlay_background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 225ms ease-in-out;
+    cursor: pointer;
+}
+
+.overlay_background.fade_out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.task_detail_card {
+    cursor: default;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 40px 20px 40px 40px;
+    max-height: 800px;
+    width: 525px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    transition: all 225ms ease-in-out;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.task_detail_card.closed {
+    opacity: 0;
+    transform: translateX(150%);
+    pointer-events: none;
+}
+
+.task_detail_card_template {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow-y: scroll;
+    padding-right: 20px;
+}
+
+.task_detail_card_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category_lable_detail {
+    background-color: #0052ff;
+    color: var(--category-label-text-color);
+    padding: 4px 16px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.closed_btn {
+    background: none;
+    font-size: 20px;
+    border-radius: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closed_btn:hover {
+    background-color: #eeeeee;
+}
+
+.edit_close_btn{
+    position: absolute;
+    right: 40px;
+}
+
+.task_detail_title h2 {
+    font-size: 61px;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+.detail_label {
+    font-size: 20px;
+    display: block;
+    color: #2A3647;
+}
+
+.task_detail_description p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.task_detail_date {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.task_detail_priority {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.task_detail_assigned {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;  
+}
+
+.task_detail_subtasks {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.priority_badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.assigned_contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: scroll;
+    max-height: 140px;
+    height: 100%;
+}
+
+.contact_badge {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.subtasks_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    max-height: 120px;
+    height: 100%;
+}
+
+.subtask_item {
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.subtask_background {
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 4px 0 4px 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    width: calc(100% - 16px);
+}
+
+.subtask_item:hover {
+    background-color: #eeeeee;
+    border-radius: 10px;
+}
+
+.subtask_chbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-image: url('../assets/imgs/boardIcons/CheckButtonNoCheckt.svg');
+    min-width: 24px;
+    flex-shrink: 0;
+}
+
+.subtask_chbox:hover {
+    background-image: url('../assets/imgs/boardIcons/CheckButtonNoCheckt.svg');
+    background-color: var(--checkbox-hover-bg);
+    border-radius: 100%;
+}
+
+.subtask_chbox:checked {
+    background-image: url('../assets/imgs/boardIcons/CheckButtonCheckt.svg');
+}
+
+.subtask_chbox:checked:hover {
+    background-image: url('../assets/imgs/boardIcons/CheckButtonCheckt.svg');
+    background-color: var(--checkbox-checked-hover-bg);
+}
+
+.subtask_background label {
+    flex: 1;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.task_detail_buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.delete_btn,
+.edit_btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    background: none;
+    cursor: pointer;
+}
+
+.delete_btn:hover,
+.edit_btn:hover{
+  color: var(--button-hover-color);
+  filter: brightness(0) saturate(100%) invert(48%) sepia(98%) saturate(384%) hue-rotate(153deg) brightness(98%) contrast(94%);
+}

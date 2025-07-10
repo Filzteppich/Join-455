@@ -1,0 +1,53 @@
+main {
+    height: 100vh;
+}
+
+h1 {
+    font-size: 47px;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+html {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.policy_container {
+    position: absolute;
+    top: 100px;
+    left: 232px;
+    height: calc(100% - 100px);
+    width: calc(100% - 424px);
+    padding: 0 96px;
+    overflow-y: auto;
+    display: block;
+    max-width: 1248px;
+}
+
+.default_container {
+    position: unset;
+    width: auto;
+}
+
+@media (max-width: 1050px) {
+    .sidebar_join_logo_db_none {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 28px;
+    }
+}
+

@@ -1,0 +1,135 @@
+@media screen and (max-width: 1050px) {
+    * {
+        font-size: 16px;
+    }
+
+    .title_head h2 {
+        font-size: 47px;
+    }
+
+    .overlay_content {
+        max-width: 605px;
+        max-height: 800px;
+    }
+
+    .sidebar_join_logo_db_none {
+        display: none;
+    }
+
+    .main_section {
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+        max-height: 600px;
+        height: 100%;
+        padding-right: 12px;
+    }
+
+    .separator_vertically_gray {
+        display: none;
+    }
+
+    .title_head {
+        margin-bottom: 24px;
+    }
+
+    .main_section_left {
+        margin-right: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .main_section_right {
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .create_task {
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+
+    .btn_position {
+        margin-right: 0;
+    }
+
+    .clear_btn {
+        padding: 8px 12px;
+    }
+
+    .create_task_btn {
+        padding: 8px 12px;
+    }
+
+    .hide_mobile_required_text_footer {
+        display: none;
+    }
+
+    .show_mobile_required_text_footer {
+        display: block;
+    }
+
+    .display_block_required_text_footer {
+        display: none;
+    }
+
+    .display_none_required_text_footer {
+        display: block;
+    }
+
+    .required_footer_text_mobile_container {
+        width: 100%;
+    }
+
+    .required_footer_text_mobile {
+        color: black;
+        margin: 0;
+        margin-bottom: 8px;
+    }
+    .required_footer_text_mobile::before {
+        content: ' *';
+        color: red;
+    }
+    .priority_btn_group {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 450px) {
+    .create_task {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16px;
+    }
+
+    .create_task_btn {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 426px) {
+    .overlay_content {
+        margin-left: 8px;
+        margin-right: 8px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .create_task {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16px;
+    }
+
+    .create_task_btn {
+        font-size: 16px;
+    }
+
+    .contact_save_message_addTask {
+        width: 250px;
+    }
+}
+

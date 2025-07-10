@@ -1,0 +1,153 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+    opacity: 1;
+    transition: opacity 225ms ease-in-out;
+    cursor: pointer;
+}
+
+.overlay_content {
+    width: 100%;
+    height: 780px;
+    max-width: 1000px;
+    margin-left: 16px;
+    margin-right: 16px;
+    background: white;
+    padding: 32px;
+    border-radius: 35px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    transition: all 225ms ease-in-out;
+    transform: translateX(0);
+    z-index: 700;
+    cursor: default;
+}
+
+.fade_out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.closed {
+    pointer-events: none;
+    opacity: 0;
+    transform: translateX(150%);
+}
+
+.close_button_container {
+    position: relative;
+    width: 32px;
+    height: 74px;
+}
+
+.head_position {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-button:hover {
+    background-color: #eeeeee;
+}
+.close-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_head {
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 48px;
+}
+
+.create_task {
+    margin-top: 150px;
+    margin-bottom: 24px;
+    margin-right: 0px;
+}
+
+.main_section_left {
+    max-width: 440px;
+    margin-left: 0px;
+    margin-right: 48px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.main_section_right {
+    margin-right: 0px;
+    max-width: 440px;
+    margin-left: 48px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    box-sizing: border-box;
+    height: 450px;
+}
+
+.required_footer_text {
+    margin-left: 0px;
+}
+
+.btn_position {
+    margin-right: 24px;
+}
+
+.dropdown_menu {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    max-height: 230px;
+}
+
+.category_dropdown_menu {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    max-height: 170px;
+    overflow-y: auto;
+}
+
+.contact_save_message_addTask {
+    background-color: var(--active-contact-color);
+    color: var(--text-color-white);
+    height: 64px;
+    width: 300px;
+    position: fixed;
+    border-radius: 20px;
+    left: 50%;
+    bottom: -100px;
+    transform: translateX(-50%);
+    transition: all 125ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    z-index: 1000;
+}
+
+.contact_save_message_addTask.show {
+    bottom: 50%;
+}
+
+.closed_contact_save_message_addTask {
+    bottom: -100px;
+}
+

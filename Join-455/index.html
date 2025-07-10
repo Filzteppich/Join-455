@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://join-455-default-rtdb.europe-west1.firebasedatabase.com">
+    <link rel="stylesheet" href="./styles/allSites.css" />
+    <link rel="stylesheet" href="./styles/font.css" />
+    <link rel="stylesheet" href="./styles/inputIcons.css">
+    <link rel="stylesheet" href="./styles/buttons.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="./styles/allSitesResponsive.css">
+    <link rel="stylesheet" href="./styles/landscape.css">
+    <link rel="stylesheet" href="./loginSingupResponsive.css">
+    <link rel="stylesheet" href="./styles/scrollbar.css">
+    <script src="./scripts/fetch.js" defer></script>
+    <script src="./scripts/auth.js" defer></script>
+    <script src="./scripts/templates.js" defer></script>
+    <script src="./script.js" defer></script>
+    <script src="./scripts/landscape.js"></script>
+    <link rel="shortcut icon"href="./assets/imgs/joinLogoDark.svg" type="image/x-icon"/>
+    <title>Join</title>
+  </head>
+  <body onload="init()">
+    <main id="main_container">
+      <div class="animation_container">
+
+        <div class="join_logo">
+          <a class="sidebar_join_logo" href="./index.html"><img class="join_logo_img" src="./assets/imgs/joinLogoDark.svg" alt="join_logo" /></a>
+        </div>
+
+        <div class="header_container">
+          
+          <div id="signup_login_desktop" class="signup_login" style="display: none;">
+            <span class="font_size_20px">Not a Join user?</span>
+            <button class="dark_btn" onclick="toggleLoginSignup()">Sign up</button>
+          </div>
+
+        </div>
+        <section id="main_section_index" class="main_section">
+          
+          <div id="login_container" class="login_wrapper"></div>
+          <div id="signup_container" class="signup_wrapper"></div>
+
+          <div id="signup_login_mobile" class="signup_login_mobile" style="display: none;">
+            <span class="font_size_20px">Not a Join user?</span>
+            <button class="dark_btn" onclick="toggleLoginSignup()">Sign up</button>
+          </div>
+
+        </section>
+      </div>
+      <footer> 
+        <div>
+          <a href="./indexPages/privacyPolicy.html">Privacy Policy</a>
+          <a href="./indexPages/legalNotice.html">Legal Notice</a>
+        </div>
+      </footer>  
+            <div id="landscape_wrapper">
+        <div id="landscape_modal" class="landscape_modal d_none">
+          <div class="landscape_modal_content">
+            <svg
+              viewBox="0 0 100 200"
+              class="phone"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="10"
+                y="10"
+                width="80"
+                height="180"
+                rx="15"
+                ry="15"
+                fill="#333"
+              />
+              <circle cx="50" cy="180" r="5" fill="#aaa" />
+              <rect
+                x="35"
+                y="20"
+                width="30"
+                height="10"
+                rx="2"
+                ry="2"
+                fill="#666"
+              />
+            </svg>
+            "Please rotate your device to portrait mode for a better
+            experience."
+          </div>
+        </div>
+      </div>
+
+    </main>
+    </main>
+  </body>
+</html>

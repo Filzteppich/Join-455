@@ -1,0 +1,15 @@
+@media (max-width: 1050px) {
+    .hide_mobile {
+        display: none;
+    }
+
+    .arrow_button_container {
+        position: absolute;
+        right: 16px;
+    }
+
+    .sidebar_join_logo_db_none {
+        display: none;
+    }
+}
+

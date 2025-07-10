@@ -1,0 +1,233 @@
+.tag_input_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 440px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.tag_input {
+    position: relative;
+    height: 48px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 12px;
+    background-color: #fff;
+}
+
+.tag_input:focus-within {
+    outline: none;
+    border-color: #2684ff;
+}
+
+.tag_input input {
+    background-color: white;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-right: 68px;
+    cursor: text;
+}
+
+.tag-list {
+    list-style: none;
+    padding: 8px 0 0;
+    margin: 0;
+}
+
+.separator_vertically_subtasks {
+    color: #d1d1d1;
+    height: 24px;
+    border: 1px solid;
+    margin: 0;
+    border-radius: 3px;
+}
+
+.delete_text_btn {
+    background-color: white;
+}
+
+.confirm_btn {
+    background-color: white;
+}
+
+.plus_btn {
+    background-color: white;
+}
+
+.tag_field {
+    align-items: center;
+    position: relative;
+    min-height: 32px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: none;
+}
+
+.edit_text_btn {
+    background: none;
+}
+.done_btn {
+    background: none;
+}
+
+.edit_text_btn:hover img {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+}
+
+.done_btn:hover img {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+}
+
+.trash_btn {
+    background: none;
+}
+
+.trash_btn:hover img {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+}
+
+.tag_field:hover {
+    border-radius: 10px;
+    background-color: var(--subtasks-background-color);
+}
+.tag_field:hover .new_tag_input {
+    border-radius: 10px;
+    background-color: var(--subtasks-background-color);
+}
+
+.new_tag_container {
+    width: 100%;
+    max-height: 105px;
+    overflow-y: auto;
+}
+
+.new_tag_input {
+    width: 100%;
+    padding: 6px 80px 6px 24px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    line-height: 1.2;
+    box-sizing: border-box;
+    min-height: 32px;
+    overflow: hidden;
+    resize: none;
+    cursor: pointer;
+}
+
+.new_tag_input:focus:not([readonly]),
+.new_tag_input.focus:not([readonly]) {
+    background-color: white;
+    border-radius: 0;
+    border-bottom: solid 2px var(--subtasks-underline-color);
+}
+
+.arrow_bg_hover_color_subtask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+}
+.arrow_bg_hover_color_subtask:hover {
+    background-color: lightgray;
+}
+
+.new_tag_container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.new_tag_container::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 10px;
+}
+
+.new_tag_container::-webkit-scrollbar-thumb {
+    background: darkgray;
+    border-radius: 10px;
+}
+
+.subtask_btn_container {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.subtasks_icon {
+    width: 24px;
+    height: 24px;
+}
+
+.tag_field:before {
+    content: '•';
+    font-size: 1rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 48%;
+    transform: translateY(-50%);
+}
+
+.tag_field.editing:before {
+    display: none;
+}
+
+.btns_position {
+    position: absolute;
+    right: 6px;
+    display: none;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tag_field:hover .btns_position {
+    display: flex;
+}
+
+.tag_field .btns_position {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tag_field:hover .btns_position {
+    opacity: 1;
+}
+
+.btns_position_done_trash {
+    position: absolute;
+    right: 6px;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input_error_new_subtask_tag::placeholder {
+    color: red;
+}
+

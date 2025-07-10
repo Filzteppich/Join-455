@@ -1,0 +1,19 @@
+.required_message {
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.input_title_required {
+    border: 2px solid red !important;
+}
+
+.input_date_required {
+    border: 2px solid red !important;
+}
+
+.category_dropdown_toggle_required {
+    border: 2px solid red !important;
+}
+

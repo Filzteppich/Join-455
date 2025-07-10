@@ -1,0 +1,346 @@
+main {
+    height: 100vh;
+}
+
+.contact_container {
+  position: absolute;
+  top: 100px;
+  left: 685px;
+  height: calc(100% - 100px);
+  width: calc(100% - 685px);
+  transition: all 225ms ease-in-out;
+  max-width: calc(1440px - 453px);
+}
+
+.active{
+  background: var(--active-contact-color);
+  color: var(--text-color-white);
+}
+
+.contact_side.active:hover{
+  background: var(--active-contact-color); 
+}
+
+.headline_container span{
+  font-size: 1.69rem;
+  font-weight: 400;
+  color: var(--text-color-headline);
+}
+
+.new_contact_container{
+  height: 101px;
+  display: flex;
+  align-items: center;
+  padding: 22.5px;
+} 
+
+.profile_icon_mini{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid var(--contact-container-background-color);
+  background-color: rgb(8, 52, 119);
+  box-sizing: border-box;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.profile_icon_large{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--contact-container-background-color);
+  background-color: rgb(8, 52, 119);
+  box-sizing: border-box;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_icon_large span{
+  color: white;
+  font-size: 47px;
+  font-weight: 500;
+}
+
+.profile_icon_mini span{
+  color: white;
+  font-size: 12px;
+}
+
+#contact_list {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  top: 96px;
+  left: 232px;
+  height: calc(100% - 96px);
+  width: 100%;
+  max-width: 453px;
+  background-color: var(--contact-container-background-color);
+  box-shadow: 4px 0px 4px #88888838;
+  z-index: 100;
+  overflow-y: scroll;
+}
+
+
+
+.letter_index{
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  width: 352px;
+  height: 58px;
+  align-items: center;
+  padding-left: 36px;
+}
+
+.letter_separator_horizontal{
+  width: 352px;
+  height: 16px;
+}
+
+.separator_horizontal{
+  width: 100%;
+  border: 1px solid var(--separator-color-grey);
+}
+
+.new_contact_btn {
+  padding-top: 22.5px;
+  height: 56px;
+  width: 352px;
+}
+
+.new_contact_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 5px 64.5px;
+}
+
+#contact_list div button img {
+  height: 32px;
+  width: 32px;
+}
+
+.contact_side{
+  width: 352px;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  gap: 35px;
+  border-radius: 10px;
+}
+
+.contact_side:hover{
+  cursor: pointer;
+  background: linear-gradient(#F9F9F9, #F0F0F0);
+}
+
+.contact_side_info{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact_side_name{
+  font-size: 20px;
+}
+
+.contact_side_mail{
+  color: var(--contact-mail-color);
+}
+
+.contact_small_img{
+  padding-left: 24px;
+}
+
+
+
+.contact_main{
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  padding-left: 62px;
+  padding-top: 32px ;
+  transition: all 225ms ease-in-out;
+}
+
+.contact_head{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.contact_name{
+  font-size: 47px;
+  font-weight: 500;
+}
+
+.contact_btn{
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-size: 16px;
+  font-weight: 400;
+  background: transparent;
+}
+
+.contact_buttons{
+  display: flex;
+}
+
+.contact_btn:hover,
+.contact_btn img:hover{
+  color: var(--button-hover-color);
+  filter: brightness(0) saturate(100%) invert(48%) sepia(98%) saturate(384%) hue-rotate(153deg) brightness(98%) contrast(94%);
+}
+
+.contact_information_text{
+  font-size: 20px;
+  height: 74px;
+  display: flex;
+  align-items: center;
+}
+
+.contact_header{
+  display: flex;
+  align-items: center;
+  gap: 54px;
+}
+
+.contact_details{
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.contact_category{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.contact_mail{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact_mail a{
+  text-decoration: none;
+  color: var(--contact-mail-color);
+}  
+
+.contact_phone{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.separator_vertical {
+    height: 59px;
+    border: 2px solid var(--separator-color);
+    margin: 0;
+    border-radius: 3px;
+}
+
+.separator_horizontally_mobile{
+  width: 90px;
+  border: 2px solid var(--separator-color);
+  display: none;
+  }
+
+  .sec_add_contact_btn{
+    display: none;
+    cursor: pointer;
+    background-color: var(--dark-button);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+   .sec_add_contact_btn img{
+    width: 32px;
+    height: 32px;
+   }
+
+
+.return_arrow{
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 16px;
+  top: 48px;
+  display: none;
+  cursor: pointer;
+}
+
+.contact_options_btn{
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  bottom: 32px;
+  right: 16px;
+  display: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-button);
+  border-radius: 50%;
+}
+
+#contact_options_dropdown{
+  display: none;
+  flex-direction: column;
+  background-color: var(--template-background-color);
+  max-width: 116px;
+  max-height: 100px;
+  padding: 10px;
+  border-radius: 20px 20px 0 20px;
+  position: absolute;
+  bottom: 32px;
+  right: 16px;
+  transition: all 300ms ease-in-out;
+}
+
+#edit_btn,
+#delete_btn {
+  background: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color-dark-button);
+  padding: 10px 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#edit_btn:hover {
+  background-color: #EEEEEE;
+  color: var(--button-hover-color);
+}
+
+#edit_btn:hover img {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(98%) saturate(384%) hue-rotate(153deg) brightness(98%) contrast(94%);
+}
+#delete_btn:hover {
+  background-color: #EEEEEE;
+  color: var(--button-hover-color);
+}
+
+#delete_btn:hover img {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(98%) saturate(384%) hue-rotate(153deg) brightness(98%) contrast(94%);
+}
+
+.hidden {
+  display: none !important;
+}
+
